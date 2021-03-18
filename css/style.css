@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(229, 0, 0, 0.8), rgba(208, 0, 56, 0.5)),
+					  url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+#cal-body{
+	width: 320px;
+	height: 525px;
+	background-color: #fff;
+	margin: 6% auto;
+	opacity: 0.8;
+	overflow: hidden;
+	position: relative;
+}
+
+.inp .inp1{
+	width: 320px;
+	height: 90px;
+	outline: 0;
+	border: none;
+	background-color: #D00038;
+	position: relative;
+}
+.inp .inp2{
+	width: 320px;
+	height: 40px;
+	outline: 0;
+	border: none;
+	background-color: #D00038;
+	position: relative;
+}
+
+.btn input{
+	clear: both;
+	position: relative;
+	width: 77px;
+	height: 80px;
+	border: 0;
+	background-color: #fff;
+	font-size: 18px;
+	color: #3D3739;
+}
+
+.btn input:hover{
+	background-color: #CFC1C5;
+	border: 0;
+}
+
+.btn .cut{
+	color: #D00038;
+}
+
+.btn .option{
+	color: #FF4615;
+}
+
+.btn .eq{
+	color: #fff;
+	width: 158px;
+	background-color: #D00038;
+}
+
+.btn .eq:hover{
+	background-color: red;
+}
