@@ -8,36 +8,37 @@
 	<div id="wrapper">
 		<div id="cal-body">
 			<div class="inp">
-				<input type="input" readonly="" name="inp" class="inp1">
-				<input type="input" readonly="" name="inp" class="inp2">
+				<input type="input" readonly="" name="inp" class="inp1" id="txtScreen1" value="0">
+				<input type="input" readonly="" name="inp" class="inp2" id="txtScreen2" value="">
 			</div> <!-- inp -->
-			<dib class="btn">
-				<input type="button" value="C" class="cut">
-				<input type="button" value="X" class="cut">
-				<input type="button" value="%" class="option">
-				<input type="button" value="/" class="option">
+			<div class="btn">
+				<input type="button" value="C" class="cut" onclick="setScreen1('C')">
+				<input type="button" value="X" class="cut" onclick="setScreen1('X')">
+				<input type="button" value="%" class="option" onclick="setScreen1('')">
+				<input type="button" value="/" class="option" onclick="setScreen1('/')">
 				<br>
-				<input type="button" value="7">
-				<input type="button" value="8">
-				<input type="button" value="9">
-				<input type="button" value="*" class="option">
+				<input type="button" value="7" onclick="setScreen1('7')">
+				<input type="button" value="8" onclick="setScreen1('8')">
+				<input type="button" value="9" onclick="setScreen1('9')">
+				<input type="button" value="*" class="option" onclick="setScreen1('*')">
 				<br>
-				<input type="button" value="4">
-				<input type="button" value="5">
-				<input type="button" value="6">
-				<input type="button" value="-" class="option">
+				<input type="button" value="4" onclick="setScreen1('4')">
+				<input type="button" value="5" onclick="setScreen1('5')">
+				<input type="button" value="6" onclick="setScreen1('6')">
+				<input type="button" value="-" class="option" onclick="setScreen1('-')">
 				<br>
-				<input type="button" value="1">
-				<input type="button" value="2">
-				<input type="button" value="3">
-				<input type="button" value="+" class="option">
+				<input type="button" value="1" onclick="setScreen1('1')">
+				<input type="button" value="2" onclick="setScreen1('2')">
+				<input type="button" value="3" onclick="setScreen1('3')">
+				<input type="button" value="+" class="option" onclick="setScreen1('+')">
 				<br>
-				<input type="button" value="0">
-				<input type="button" value=".">
-				<input type="button" value="=" class="eq">
+				<input type="button" value="0" onclick="setScreen1('0')">
+				<input type="button" style="font-size: 30px;" value="." onclick="setScreen1('.')">
+				<input type="button" value="=" class="eq" onclick="setScreen1('=')">
 				<br>
-			</dib> <!-- btn -->
+			</div> <!-- btn -->
 		</div> <!-- cal-body -->
 	</div> <!-- wrapper -->
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

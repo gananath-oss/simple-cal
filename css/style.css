@@ -25,7 +25,11 @@
 
 .inp .inp1{
 	width: 320px;
-	height: 90px;
+	height: 51px;
+	padding-top: 30px;
+	font-size: 60px;
+	text-align: right;
+	color: #fff;
 	outline: 0;
 	border: none;
 	background-color: #D00038;
