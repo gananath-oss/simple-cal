@@ -8,13 +8,13 @@
 	<div id="wrapper">
 		<div id="cal-body">
 			<div class="inp">
-				<input type="input" readonly="" name="inp" class="inp1" id="txtScreen1" value="0">
-				<input type="input" readonly="" name="inp" class="inp2" id="txtScreen2" value="">
+				<input type="input" readonly="" name="inp" class="inp1" id="txtScreen1" value="0" placeholder="0">
+				<input type="input" readonly="" name="inp" class="inp2" id="txtScreen2" value="0.00" placeholder="0.00">
 			</div> <!-- inp -->
 			<div class="btn">
-				<input type="button" value="C" class="cut" onclick="setScreen1('C')">
-				<input type="button" value="X" class="cut" onclick="setScreen1('X')">
-				<input type="button" value="%" class="option" onclick="setScreen1('')">
+				<input type="button" value="C" class="cut" onclick="clear()">
+				<input type="button" value="X" class="cut" onclick="('X')">
+				<input type="button" value="%" class="option" onclick="setScreen1('%')">
 				<input type="button" value="/" class="option" onclick="setScreen1('/')">
 				<br>
 				<input type="button" value="7" onclick="setScreen1('7')">
@@ -34,7 +34,7 @@
 				<br>
 				<input type="button" value="0" onclick="setScreen1('0')">
 				<input type="button" style="font-size: 30px;" value="." onclick="setScreen1('.')">
-				<input type="button" value="=" class="eq" onclick="setScreen1('=')">
+				<input type="button" value="=" class="eq" onclick="equal('=')">
 				<br>
 			</div> <!-- btn -->
 		</div> <!-- cal-body -->
